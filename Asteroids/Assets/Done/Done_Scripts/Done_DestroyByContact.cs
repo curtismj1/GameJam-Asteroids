@@ -35,8 +35,8 @@ public class Done_DestroyByContact : MonoBehaviour
 
 		if (other.tag == "Player")
 		{
-			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-			gameController.GameOver();
+			other.GetComponent<Done_PlayerController>().health -= 10;
+			return;
 		}
 		
 		gameController.AddScore(scoreValue);

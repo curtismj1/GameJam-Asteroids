@@ -18,6 +18,7 @@ public class Done_PlayerController : MonoBehaviour
 	public float fireRate;
 	public Vector3 facing;
 	private float nextFire;
+	public int health = 100;
 	
 	void Update ()
 	{
